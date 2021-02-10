@@ -9,13 +9,13 @@ import smtplib as s
 
 class email:
 	global sender_pass
-	sender_pass = "cantlogin6969"
+	sender_pass = ""
 	def email_sender(self,message):
-		sender_mail = "contact.ddesk@gmail.com"
+		sender_mail =""
 		ob = s.SMTP("smtp.gmail.com",587)
 		ob.starttls()
 		ob.login(sender_mail,sender_pass)
-		ob.sendmail(sender_mail,'dabangayush369@gmail.com',message)
+		ob.sendmail(sender_mail,'',message)
 		ob.quit()
 
 call = email()
